@@ -1,0 +1,70 @@
+/* .profile-form__container {
+  width: 75vw;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  vertical-align: 20%;
+  margin-top: 5%;
+  margin-left: 2%;
+} */
+/* .profile-card {
+  width: 350px;
+}
+.profile-form__title{
+  justify-content: center;
+} */
+ .profile-card__content {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+}
+/* .content {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 15px;
+}
+.profile-form__actions {
+  float: right;
+} */
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px;
+  margin-bottom: 200px;
+}
+
+
+.mat-form-field {
+  width: 100%;
+  min-width: 100px;
+  padding: 25px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+mat-card {
+  background-color: #1CFFD9;
+  opacity: 0.9;
+  width: 500px;
+}
+.pickle-rick {
+  height: 150px;
+  width: 200px;
+  margin-left: 5vw;
+}
+

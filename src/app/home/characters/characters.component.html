@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-card *ngFor="let character of (character$ | async); let i = index" class="character">
+      <img class="image" mat-card-image src="{{ character.image}}" alt="photo">
+      <mat-card-title>{{character.name}}</mat-card-title>
+      <mat-card-content>
+          <div class="content__container">
+            <div class="left"><label>Gender:</label></div>
+            <div class="right">
+              <p>{{character.gender}}</p>
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="left"><label>Origin:</label></div>
+            <div class="right">
+              <p>{{character.origin?.name}}</p>
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="left"> <label>Status:</label></div>
+            <div class="right">
+              <p>{{character.status}}</p>
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="left"><label>Species:</label></div>
+            <div class="right">
+              <p>{{character.species}}</p>
+            </div>
+          </div>
+          <div class="content__container">
+            <div class="left"><label>Type:</label></div>
+            <div class="right">
+              <p>{{character.type === '' ? 'N/A' : character.type}}</p>
+            </div>
+          </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button> <mat-icon>mode_edit</mat-icon> </button>
+        <button mat-icon-button> <mat-icon>delete</mat-icon> </button>
+      </mat-card-actions>
+  </mat-card>
+</div>
+

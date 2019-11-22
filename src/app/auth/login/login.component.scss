@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 300px 0px;
+  /* margin-bottom: 200px; */
+}
+mat-card {
+  background-color: #1CFFD9;
+  opacity: 0.9;
+  width: 400px;
+  position: absolute;
+  display: table-column;
+
+  mat-card-title,
+  mat-card-content {
+  display: flex;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+
+  .login {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+
+      mat-form-field {
+      width: 100%;
+      min-width: 100px;
+      padding: 25px;
+      margin-bottom: -35px;
+    }
+    em {
+      margin-left: 1vw;
+      color: red;
+    }
+    .invalid-feedback {
+     color: red;
+     position: relative;
+     margin-left: 5vw;
+
+    }
+    .button {
+     display: flex;
+     justify-content: flex-end;
+     font-family: 'Permanent Marker', cursive;
+
+    .b {
+      font-family: 'Permanent Marker', cursive;
+    }
+  }
+}
+  }
+
+}
+

@@ -1,0 +1,9 @@
+<mat-toolbar>
+    <img src="https://www.firstcomicsnews.com/wp-content/uploads/2017/09/Rick-and-Morty-logo-600x257.png" class="image-logo-crc" alt="">
+  <p>{{ (currentUser?.username | async)?.username }}</p>
+  <div>
+      <a (click)="logout()" class="log">Logout</a>
+      <a [routerLink]="['profile']"><i class="material-icons">
+      perm_identity
+      </i></a></div>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+<div class="auth-container">
+  <app-login *ngIf="isLogin"
+  (openSignIn)="toggleRegister()">
+  </app-login>
+
+  <app-register *ngIf="!isLogin"
+  (openLogin)="toggleLogin()">
+ </app-register>
+
+</div>
